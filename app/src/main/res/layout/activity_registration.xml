@@ -3,13 +3,37 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:padding="16dp"
     android:layout_height="match_parent">
-
     <TextView
-        android:layout_gravity="center"
-        android:id="@+id/textView"
-        android:textSize="24sp"
+        android:text="Register"
+        android:textSize="28dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registration" />
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:hint="user name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtemail"
+        android:hint="email "
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtpwd"
+        android:hint="pwd "
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>
